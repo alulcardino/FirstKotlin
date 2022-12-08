@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         rootElement = ActivityMainBinding.inflate(layoutInflater)
         setContentView(rootElement.root)
 
-        rootElement.editTextName
-
         rootElement.idButtomSave.setOnClickListener {
             rootElement.textViewName.text =
                 "Hello, ${rootElement.editTextName.text.toString().trim()} "
